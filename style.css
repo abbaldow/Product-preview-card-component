@@ -1,0 +1,107 @@
+:root{
+    --cor-de-fundo: hsl(30, 38%, 92%);
+    --verde: hsl(158, 36%, 37%);
+    --branco: hsl(0, 0%, 100%);
+    --azul-escuro: hsl(212, 21%, 14%);
+    --cinza-azulado: hsl(228, 12%, 48%);
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Fraunces', serif;
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+.card{
+    display: relative;
+    margin: 2em;
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+.container_imagem{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.sobre_produto{
+    margin: 0.5em 1.5em;
+}
+
+.produto{
+    color: var(--cinza-azulado);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+    line-height: 1em;
+    margin: 0.4em 0;
+
+}
+
+.descrição{
+    font-size: 12px;
+    color: var(--cinza-azulado);
+}
+
+.valores{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5em 0;
+}
+.preço{
+    font-family: var(--fonte-secundaria);
+    color: var(--verde);
+    font-size: 26px;
+    margin-right: 0.7em;
+}
+.preço_antigo{
+    font-family: var(--fonte-secundaria);
+    color: var(--cinza-azulado);
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+button{
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--verde);
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icone_botão{
+    margin-right: 1em;
+}
+
+.attribution{
+    font-size: 10px;
+     line-height: 1em;
+    width: 50%;
+}
+
+.attribution a{
+    color: var(--verde);
+    font-weight: 700;
+    text-decoration: none;
+}
