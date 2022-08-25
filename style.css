@@ -148,12 +148,7 @@ button{
         width: 100%;
     }
 
-    .nome{
-        line-height: 1.2em;
-        margin: 0.7em 0;
-    
-    }
-    .valores{
+       .valores{
         margin: 2em 0;
     }
     
