@@ -14,15 +14,21 @@ body {
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.pagina{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.5em;
+
 }
 .card{
-    display: relative;
-    margin: 2em;
+    width:320px;
     background-color: var(--branco);
     border-radius: 10px;
 }
@@ -100,9 +106,8 @@ button{
 .attribution{
     font-size: 10px;
     line-height: 1em;
-    width: 50%;
     text-align: center;
-    margin-bottom: 1em;
+    margin: 2em 0 0 0;
 }
 
 .attribution a{
@@ -112,39 +117,45 @@ button{
 }
 
 @media only screen and (min-width: 1440px){
-
-    .card {
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
+   
     .card{
+        width: 35%;
+        height: auto;
         display: flex;
-        width: 40%;
         flex-direction: row;
-        background-color: var(--branco);
-    
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0px;
     }
 
     .container_imagem_desktop{
-            display: inline;
-            height: 100%;
-            width: 100%;
+            display: block;
             border-radius: 10px 0 0 10px ;
+            width: 100%;
+            margin: 0px;
+
         
     }
         
     .container_imagem{
         display: none;
+
     }
 
     .sobre_produto{
-        width: 90%;
-    }
-    
-    .attribution{
-        display: none;
+        display:block;
+        width: 100%;
     }
 
+    .nome{
+        line-height: 1.2em;
+        margin: 0.7em 0;
+    
+    }
+    .valores{
+        margin: 2em 0;
+    }
+    
+    
 }
